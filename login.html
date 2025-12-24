@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishmish Cake Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="header_main_nav">
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="contact-info">
+                        <a href="tel:07958714672">
+                            <i class="fas fa-phone"></i>
+                            <span>07958 714672</span>
+                        </a>
+                        <a href="mailto:cakes@rachelles.co.uk">
+                            <i class="fas fa-envelope"></i>
+                            <span>cakes@rachelles.co.uk</span>
+                        </a>
+                        <div class="social-links">
+                            <a href="#" title="فيسبوك" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" title="انستجرام" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" title="بنترست" aria-label="Pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                            <a href="#" title="فيميو" aria-label="Vimeo">
+                                <i class="fab fa-vimeo-v"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="account-cart">
+                        <a href="./login.html">
+                            <i class="fas fa-user-plus"></i>
+                            <span>التسجيل/اشتراك</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./assets/img/logo.png" alt="شعار الموقع">
+                        </a>
+                    </div>
+
+
+                    <nav id="mainNav">
+                        <ul>
+                            <li><a href="./index.html" class="active">الرئيسية</a></li>
+                            <li><a href="./courses.html">الدورات</a></li>
+                            <li><a href="#">من نحن</a></li>
+                            <li><a href="#">ورش العمل</a></li>
+                            <li><a href="#">تواصل معنا</a></li>
+                        </ul>
+                    </nav>
+
+                    <button class="mobile-menu-btn_tow" aria-label="تغيير اللغة">
+                        <i class="fas fa-globe"></i> EN
+                    </button>
+
+
+
+                    <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="القائمة">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main>
+        <div class="container_main_login">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <h1>تسجيل الدخول</h1>
+                    <p>مرحباً بعودتك! قم بتسجيل الدخول للمتابعة</p>
+                </div>
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label>البريد الإلكتروني</label>
+                        <div class="input-wrapper">
+                            <input type="email" class="form-control" placeholder="example@email.com" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>كلمة المرور</label>
+                        <div class="input-wrapper">
+                            <input type="password" class="form-control" placeholder="أدخل كلمة المرور" required>
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">تذكرني</label>
+                        </div>
+                        <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                    </div>
+
+                    <a href="./profil.html" type="submit" class="btn-submit">
+                        <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+                    </a>
+                </form>
+                <div class="auth-footer">
+                    ليس لديك حساب؟ <a href="./register.html">إنشاء حساب جديد</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer-container">
+        <div class="container">
+            <!-- Newsletter Section -->
+            <div class="newsletter-section">
+                <div class="newsletter-header">
+                    <h2 class="newsletter-title">الاشتراك في النشرة البريدية</h2>
+                    <div class="form-group">
+                        <input type="text" placeholder="الاسم الأول">
+                        <input type="email" placeholder="البريد الإلكتروني *">
+                        <button class="signup-btn">اشترك</button>
+                    </div>
+                </div>
+                <div class="newsletter-footer">
+                    <p>يرجى إضافة بياناتك لتلقي التحديثات حول الدروس الجديدة، الورش، العروض، الخصومات والمزيد.</p>
+                    <a href="#" class="privacy-link">اطلع على سياسة الخصوصية الخاصة بي هنا.</a>
+                </div>
+            </div>
+
+            <!-- Info Section -->
+            <div class="info-section">
+                <div class="info-block">
+                    <h3>تواصل معنا</h3>
+                    <p>البريد الإلكتروني: <a href="mailto:cakes@rachelles.co.uk">cakes@rachelles.co.uk</a></p>
+                    <p>الهاتف المحمول: 07958 714672</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>ساعات العمل</h3>
+                    <p><strong>الإثنين - السبت :</strong> 9 صباحًا - 6 مساءً</p>
+                    <p><strong>الأحد :</strong> مغلق</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>الموقع</h3>
+                    <p>Rachelle's،</p>
+                    <p>4 Maurward Close،</p>
+                    <p>Stinsford, Dorchester،</p>
+                    <p>Dorset, DT2 8PU</p>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="bottom-section">
+                <p class="copyright">جميع الحقوق محفوظة مشمة كيك اكاديمي 2025</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="انستجرام"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" aria-label="بنترست"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" aria-label="فيميو"><i class="fab fa-vimeo-v"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+</body>
+
+</html>

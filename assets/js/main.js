@@ -80,20 +80,34 @@ $(document).ready(function () {
   });
 });
 
+let scrollBtn = document.getElementById("scrollTopBtn");
 
-  let scrollBtn = document.getElementById("scrollTopBtn");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 300) {
+    scrollBtn.classList.add("show");
+  } else {
+    scrollBtn.classList.remove("show");
+  }
+});
 
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 300) {
-            scrollBtn.classList.add("show");
-        } else {
-            scrollBtn.classList.remove("show");
-        }
-    });
+scrollBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
 
-    scrollBtn.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
+const tabs = document.querySelectorAll(".tab");
+const tabContents = document.querySelectorAll(".tab-content");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const targetTab = tab.getAttribute("data-tab");
+
+    tabs.forEach((t) => t.classList.remove("active"));
+    tabContents.forEach((content) => content.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(targetTab).classList.add("active");
+  });
+});
